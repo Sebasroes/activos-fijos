@@ -41,7 +41,7 @@ public class PersonaController {
     }
 
     @GetMapping("/{nombre}")
-    public ResponseEntity getPersonaByNombre ((@PathVariable(name = "nombre") String nombre){
+    public ResponseEntity getPersonaByNombre (@PathVariable(name = "nombre") String nombre){
 
         Optional<Persona> optionalPersona = this.service.getByNombre(nombre);
         if(optionalPersona.isPresent()) {
