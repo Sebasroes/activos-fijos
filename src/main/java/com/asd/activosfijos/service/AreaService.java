@@ -31,9 +31,9 @@ public class AreaService {
     }
 
     public Optional<Area> save(String nombre) {
-
         Area areaAguardar = Area.builder().nombre(nombre).build();
         Area areaGuardada = areaRepository.save(areaAguardar);
         return Optional.ofNullable(areaGuardada);
     }
+}
 

@@ -36,8 +36,6 @@ public class AreaController {
         }{
             return ResponseEntity.ok(this.service.getAll());
         }
-
-
     }
 
     //Lo solicitamos por el nombre del area

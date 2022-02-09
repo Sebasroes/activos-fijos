@@ -10,8 +10,8 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class AreaRequest {
+public class PersonaRequest {
 
-    @NotNull String nombre;
-
+    @NotNull
+    private String nombre;
 }
