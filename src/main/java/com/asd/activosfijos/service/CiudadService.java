@@ -21,8 +21,11 @@ public class CiudadService {
     }
 
     public Optional<Ciudad> getByName(String nombre) {
+
+        //List<Ciudad> ciudades = ciudadRepository.findAllByNombre(nombre);
         return ciudadRepository.findByNombre(nombre);
     }
+
 
     public Optional<Ciudad> save(String nombre) {
         Ciudad ciudadAguardar = Ciudad.builder().nombre(nombre).build();
